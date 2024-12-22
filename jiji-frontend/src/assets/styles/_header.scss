@@ -1,0 +1,29 @@
+@use './variables' as var;
+@use './mixins' as mixin;
+
+.header {
+  background-color: var.$primary-color;
+  color: var.$white;
+  padding: var.$padding-base;
+  text-align: center;
+
+  &__title {
+    font-size: var.$font-size-xl;
+    font-weight: bold;
+  }
+
+  &__nav {
+    margin-top: var.$padding-base;
+
+    a {
+      margin: 0 15px;
+      font-size: var.$font-size-lg;
+      color: var.$white;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var.$accent-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use './variables' as var;
+
+.footer {
+  background-color: var.$primary-color;
+  color: var.$white;
+  text-align: center;
+  padding: var.$padding-base;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: var.$font-size-base;
+}

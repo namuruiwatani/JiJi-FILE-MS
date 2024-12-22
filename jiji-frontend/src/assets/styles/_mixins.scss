@@ -1,0 +1,27 @@
+@use './variables' as var;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($bg-color) {
+  background-color: $bg-color;
+  color: var.$white;
+  border: none;
+  padding: var.$padding-base;
+  border-radius: var.$border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+@mixin container {
+  max-width: var.$container-width;
+  margin: 0 auto;
+  padding: 0 var.$padding-base;
+}

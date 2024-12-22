@@ -1,0 +1,7 @@
+@use './variables' as var;
+@use './mixins' as mix;
+@use './base' as base;
+
+body {
+  font-size: var.$font-size-base;
+}
